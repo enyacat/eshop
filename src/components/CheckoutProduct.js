@@ -1,24 +1,24 @@
 import React from 'react';
 import './CheckoutProduct.css';
 
-export default function CheckoutProduct() {
+export default function CheckoutProduct({id, image, title, price, rating}) {
   return (
     <div className='checkout-product'>
       <img
-        src='https://m.media-amazon.com/images/I/6175I+PNYRL._AC_SX450_.jpg'
+        src={image}
         alt=''
         className='checkout-product-image'
       />
       <div className='checkout-product-info'>
         <p className='checkout-product-title'>
-          Focusrite Scarlett Solo Studio 3rd Gen USB Audio Interface Bundle
+          {title}
         </p>
         <p className='checkout-product-price'>
           <small>$</small>
-          <strong>20</strong>
+          <strong>{price}</strong>
         </p>
         <div className='checkout-product-rating'>
-          <p>⭐️</p>
+          {Array(rating).fill(<p>⭐️</p>)}
         </div>
         <button>Delete</button>
       </div>
