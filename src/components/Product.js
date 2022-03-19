@@ -1,17 +1,17 @@
-import React from 'react';
-import './Product.css';
-import { useStateValue } from '../store/StateProvider';
+import React from "react";
+import "./Product.css";
+import { useStateValue } from "../store/StateProvider";
 
 export default function Product({ id, title, image, price, rating }) {
   const [state, dispatch] = useStateValue();
   const addToCart = () => {
     dispatch({
-      type: 'ADD_TO_CART',
+      type: "ADD_TO_CART",
       item: {
-        id: id,
-        image: image,
-        price: price,
-        rating: rating,
+        id,
+        image,
+        price,
+        rating,
       },
     });
   };

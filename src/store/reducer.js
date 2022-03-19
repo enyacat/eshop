@@ -13,6 +13,17 @@ const reducer = (state, action) => {
         ...state,
         cart: [...state.cart, action.item],
       };
+    case "DELETE_ITEM":
+      return {
+        ...state,
+        cart: state.cart.filter((item) => {
+          if (item.id !== action.id) {
+            return item;
+          }
+        }),
+      };
+    default:
+      return state;
   }
 };
 
