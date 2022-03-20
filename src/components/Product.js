@@ -16,7 +16,7 @@ export default function Product({ id, title, image, price, rating }) {
     });
   };
   return (
-    <div className='product'>
+    <div key={id} className='product'>
       <div className='product-info'>
         <p>{title}</p>
         <div className='product-price'>
