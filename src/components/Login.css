@@ -3,6 +3,7 @@
   background: hsl(0, 0%, 100%);
   flex-direction: column;
   align-items: center;
+  margin-bottom: 22px;
 }
 .login-logo {
   display: flex;
@@ -19,9 +20,7 @@
 .spacing-small {
   margin-bottom: 10px !important;
 }
-.login-section {
-  margin-bottom: 22px;
-}
+
 .login-box {
   display: block;
   border-radius: 4px;
@@ -51,8 +50,12 @@
 .login-padding-extra-large {
   padding: 20px 26px !important;
 }
-
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
 .login-button-inner {
+  margin-top: 5px;
   display: block;
   position: relative;
   overflow: hidden;
@@ -92,7 +95,7 @@
 }
 
 .login-divider-break h5::after {
-  content: "";
+  content: '';
   width: 100%;
   background-color: transparent;
   display: block;

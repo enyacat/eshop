@@ -57,6 +57,7 @@
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+  text-decoration: none;
 }
 
 .nav-itemLineOne {
@@ -66,6 +67,9 @@
 .nav-itemLineTwo {
   font-size: 13px;
   font-weight: 800;
+}
+.signIn-link {
+  text-decoration: none;
 }
 
 .nav-itemBasket {
